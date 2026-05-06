@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portfolio Rendering 3D</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="navbar">
+
+			<div class="logo-area">
+				<img src="assets/images/logoS.png" alt="Logo" style="--w: 66px; --h: 66px; --mw: 40px; --mh: 40px;">
+				<div class="logo-text">Rendering Studio</div>
+			</div>
+
+			<nav>
+				<a href="#lavori">Lavori</a>
+				<a href="#servizi">Servizi</a>
+				<a href="#contatti">Contatti</a>
+			</nav>
+
+		</div>
+	</header>
+
+	<section class="hero" style="--hero-h: 90vh; --hero-mobile-h: 60vh;">
+		<img src="images/render-principale.jpg" alt="Immagine principale portfolio" style="--w: 100%; --h: 100%;">
+
+		<div class="hero-content">
+			<h1>stefano designer udine Rendering modellazione 3D</h1>
+			<p>Immagini fotorealistiche per architettura, interni, esterni, prodotti e visualizzazione immobiliare.</p>
+		</div>
+	</section>
+
+	<section id="lavori">
+		<div class="section-title">
+			<h2>Lavori</h2>
+			<p>Clicca su un progetto per aprire la galleria completa.</p>
+		</div>
+
+		<div class="gallery">
+
+			<div class="work"
+				data-title="Bagno Luxury"
+				data-description="Rendering bagno con rivestimenti effetto marmo, sanitari moderni e luce scenografica."
+				data-images="images/bagno-01.jpg|images/bagno-02.jpg|images/bagno-03.jpg|images/bagno-04.jpg|images/bagno-05.jpg|images/bagno-06.jpg">
+				<img src="images/bagno-01.jpg" alt="Bagno Luxury" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>Bagni Luxury</h3>
+					<p>Interni / Bagno</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Camera da Letto"
+				data-description="Camere matrimoniali con atmosfera elegante, tessuti morbidi e illuminazione calda."
+				data-images="images/camera-01.jpg|images/camera-02.jpg|images/camera-03.jpg|images/camera-04.jpg|images/camera-05.jpg|images/camera-06.jpg">
+				<img src="images/camera-01.jpg" alt="Camera da Letto" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>Camere da Letto</h3>
+					<p>Interni / Bedroom</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Interior Living"
+				data-description="Rendering di soggiorni moderni con luci naturali, materiali caldi e arredo contemporaneo."
+				data-images="images/living-01.jpg|images/living-02.jpg|images/living-03.jpg">
+				<img src="images/living-01.jpg" alt="Interior Living" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>interni/soggiorno&nbsp;&nbsp;</h3>
+					<p>Interni / Residenziale</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Cucina Moderna"
+				data-description="Visualizzazione 3D di cucine moderne con superfici realistiche e illuminazione soft."
+				data-images="images/cucina-01.jpg|images/cucina-02.jpg|images/cucina-03.jpg|images/cucina-04.jpg">
+				<img src="images/cucina-01.jpg" alt="Cucina Moderna" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>Cucine Moderna</h3>
+					<p>Interni / Cucina</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Villa Exterior"
+				data-description="Rendering esterni di ville contemporanee con giardino, luce al tramonto."
+				data-images="images/villa-01.jpg|images/villa-02.jpg|images/villa-03.jpg|images/villa-04.jpg">
+				<img src="images/villa-01.jpg" alt="Villa Exterior" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>Ville</h3>
+					<p>Esterni / Architettura</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Uffici"
+				data-description="Visualizzazione di spazio commerciale, showroom o negozio con layout elegante."
+				data-images="images/commerciale-01.jpg|images/commerciale-02.jpg|images/commerciale-03.jpg|images/commerciale-04.jpg">
+				<img src="images/commerciale-01.jpg" alt="Commercial Space" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>uffici</h3>
+					<p>Commerciale / Retail</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Oggetti Design"
+				data-description="Render di oggetti moderni, materiali professionali."
+				data-images="images/oggetto-01.jpg|images/oggetto-02.jpg|images/oggetto-03.jpg|images/oggetto-04.jpg">
+				<img src="images/oggetto-01.jpg" alt="Office Design" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>Oggetti</h3>
+					<p>Oggetti / Item</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Vari Render"
+				data-description="Rendering prodotto con studio lighting, materiali realistici e composizione pulita."
+				data-images="images/prodotto-01.jpg|images/prodotto-02.jpg|images/prodotto-03.jpg|images/prodotto-04.jpg">
+				<img src="images/prodotto-01.jpg" alt="Product Render" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>vari Rendering</h3>
+					<p>Prodotto / Design</p>
+				</div>
+			</div>
+
+			<div class="work"
+				data-title="Dettagli Strutture"
+				data-description="Dettaglio architettonico ravvicinato con focus su texture, materiali in trasparenza."
+				data-images="images/dettaglio-01.jpg|images/dettaglio-02.jpg|images/dettaglio-03.jpg|images/dettaglio-04.jpg">
+				<img src="images/dettaglio-01.jpg" alt="Architectural Detail" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
+				<div class="work-info">
+					<h3>strutture Dettagli</h3>
+					<p>Dettagli / Materiali</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="servizi">
+		<div class="section-title">
+			<h2>Servizi</h2>
+			<p>Servizi professionali di visualizzazione 3D per architettura, design e comunicazione immobiliare.</p>
+		</div>
+
+		<div class="services">
+
+			<div class="service">
+				<h3>Rendering Architettonico</h3>
+				<p>Immagini fotorealistiche per esterni, edifici, ville e progetti architettonici.</p>
+			</div>
+
+			<div class="service">
+				<h3>Interior Rendering</h3>
+				<p>Visualizzazioni di interni con luce realistica, materiali accurati e atmosfera studiata.</p>
+			</div>
+
+			<div class="service">
+				<h3>Product Rendering</h3>
+				<p>Rendering di prodotti, arredi e oggetti di design per cataloghi, e-commerce e social.</p>
+			</div>
+
+			<div class="service">
+				<h3>Rendering Immobiliari</h3>
+				<p>Immagini pensate per agenzie, costruttori e investitori.</p>
+			</div>
+
+			<div class="service">
+				<h3>Concept &amp Design</h3>
+				<p>Supporto visivo per mood, materiali, layout e soluzioni estetiche.</p>
+			</div>
+
+			<div class="service">
+				<h3>Post Produzione</h3>
+				<p>Correzione colore, atmosfera, contrasto, effetti luce e rifinitura dettagli.</p>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="contatti" class="contact">
+		<div>
+			<h2>Contatti</h2>
+			<p>
+				Per rendering architettonici, interni, esterni, immagini immobiliari,
+				product render o presentazioni professionali.
+			</p>
+		</div>
+
+		<div class="contact-icons">
+
+			<a href="https://wa.me/393409282172" target="_blank" title="WhatsApp">
+				<img loading="lazy" src="assets/images/whatsap.png" alt="WhatsApp" style="--w: 75px; --h: 75px;">
+			</a>
+
+			<a href="mailto:stefanodesignerudine@gmail.com" title="Email">
+				<img loading="lazy" src="assets/images/gmail.png" alt="Email" style="--w: 75px; --h: 75px;">
+			</a>		
+			
+			<a href="tel:+393409282172" title="Chiama">
+				<img loading="lazy" src="assets/images/call.png" alt="Telefono" style="--w: 75px; --h: 75px;">
+			</a>
+
+			<a href="https://m.me/stefano.basso.9" target="_blank" title="Messenger">
+				<img loading="lazy" src="assets/images/messanger.png" alt="Messenger" style="--w: 75px; --h: 75px;">
+			</a>
+
+			<a href="https://www.instagram.com/stefanorafaelbasso/" target="_blank" rel="noopener noreferrer" title="Instagram">
+    <img loading="lazy" src="assets/images/instagram.png" alt="Instagram" style="width: 75px; height: 75px;">
+            </a>
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-logo">
+			<img src="assets/images/logoS.png" alt="Logo" style="--w: 120px; --h: 120px;">
+			<strong>Rendering Studio</strong>
+		</div>
+
+		© 2026 Rendering Studio — Portfolio Rendering 3D
+	</footer>
+
+	<div class="lightbox" id="lightbox">
+		<span class="close" id="close">&times;</span>
+		<span class="arrow left" id="prev">&#10094;</span>
+		<span class="arrow right" id="next">&#10095;</span>
+
+		<div class="lightbox-content">
+			<img id="lightbox-img" img="" alt="">
+
+			<div class="lightbox-text">
+				<h3 id="lightbox-title"></h3>
+				<p id="lightbox-description"></p>
+			</div>
+		</div>
+
+		<div class="counter" id="counter"></div>
+	</div>
+
+	<script>
+		const works = document.querySelectorAll('.work');
+		const lightbox = document.getElementById('lightbox');
+		const lightboxImg = document.getElementById('lightbox-img');
+		const lightboxTitle = document.getElementById('lightbox-title');
+		const lightboxDescription = document.getElementById('lightbox-description');
+		const closeBtn = document.getElementById('close');
+		const prevBtn = document.getElementById('prev');
+		const nextBtn = document.getElementById('next');
+		const counter = document.getElementById('counter');
+
+		let currentImages = [];
+		let currentIndex = 0;
+
+		function openLightbox(work) {
+			currentImages = work.dataset.images.split('|');
+			currentIndex = 0;
+
+			lightboxTitle.textContent = work.dataset.title;
+			lightboxDescription.textContent = work.dataset.description;
+
+			updateLightboxImage();
+			lightbox.classList.add('active');
+		}
+
+		function updateLightboxImage() {
+			lightboxImg.src = currentImages[currentIndex];
+			counter.textContent = (currentIndex + 1) + ' / ' + currentImages.length;
+		}
+
+		function nextImage() {
+			currentIndex++;
+
+			if (currentIndex >= currentImages.length) {
+				currentIndex = 0;
+			}
+
+			updateLightboxImage();
+		}
+
+		function prevImage() {
+			currentIndex--;
+
+			if (currentIndex < 0) {
+				currentIndex = currentImages.length - 1;
+			}
+
+			updateLightboxImage();
+		}
+
+		function closeLightbox() {
+			lightbox.classList.remove('active');
+		}
+
+		works.forEach(work => {
+			work.addEventListener('click', () => {
+				openLightbox(work);
+			});
+		});
+
+		nextBtn.addEventListener('click', e => {
+			e.stopPropagation();
+			nextImage();
+		});
+
+		prevBtn.addEventListener('click', e => {
+			e.stopPropagation();
+			prevImage();
+		});
+
+		closeBtn.addEventListener('click', closeLightbox);
+
+		lightbox.addEventListener('click', e => {
+			if (e.target === lightbox) {
+				closeLightbox();
+			}
+		});
+
+		document.addEventListener('keydown', e => {
+			if (!lightbox.classList.contains('active')) return;
+
+			if (e.key === 'Escape') closeLightbox();
+			if (e.key === 'ArrowRight') nextImage();
+			if (e.key === 'ArrowLeft') prevImage();
+		});
+	</script>
+
+</body>
+</html>
