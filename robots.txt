@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://renderingudine.it/sitemap.xml
