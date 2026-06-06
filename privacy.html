@@ -126,9 +126,45 @@
 		<p>© 2026 Rendering Udine — Rendering 3D fotorealistici</p>
 
 		<div class="footer-links">
-			<a href="index.html">Torna alla Home</a>
-		</div>
+		<a href="index.html">Torna alla Home</a>
+		<span>|</span>
+		<a href="cookie.html">Cookie Policy</a>
+	</div>
 	</footer>
+
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Informativa cookie">
+	<div class="cookie-content">
+		<p>
+			Questo sito utilizza solo cookie tecnici necessari al funzionamento e non usa cookie di profilazione.
+			Per maggiori informazioni consulta la
+			<a href="privacy.html">Privacy Policy</a>
+			e la
+			<a href="cookie.html">Cookie Policy</a>.
+		</p>
+
+		<button id="accept-cookies" type="button">OK</button>
+	</div>
+</div>
+
+<script>
+	(function () {
+		const cookieBanner = document.getElementById('cookie-banner');
+		const acceptCookies = document.getElementById('accept-cookies');
+
+		if (!cookieBanner || !acceptCookies) return;
+
+		if (localStorage.getItem('cookieAccepted') === 'true') {
+			cookieBanner.style.display = 'none';
+			return;
+		}
+
+		acceptCookies.addEventListener('click', function () {
+			localStorage.setItem('cookieAccepted', 'true');
+			cookieBanner.style.display = 'none';
+		});
+	})();
+</script>
 
 </body>
 </html>

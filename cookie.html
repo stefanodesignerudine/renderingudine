@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Cookie Policy | Rendering Udine</title>
+	<meta name="description" content="Cookie Policy del sito Rendering Udine: informazioni sui cookie tecnici e sui servizi utilizzati.">
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="navbar">
+
+			<div class="logo-area">
+				<img src="assets/images/logoS.png" alt="Logo Rendering Udine" style="--w: 66px; --h: 66px; --mw: 40px; --mh: 40px;">
+				<div class="logo-text">Rendering Udine</div>
+			</div>
+
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="index.html#contatti">Contatti</a>
+			</nav>
+
+		</div>
+	</header>
+
+	<section class="privacy-page">
+		<div class="section-title">
+			<h2>Cookie Policy</h2>
+			<p>Informazioni sull’utilizzo dei cookie e di tecnologie simili.</p>
+		</div>
+
+		<div class="privacy-content">
+
+			<p>
+				Il sito <strong>renderingudine.it</strong> utilizza, nella sua configurazione attuale,
+				solo tecnologie tecniche necessarie al corretto funzionamento del sito.
+			</p>
+
+			<h3>Cookie tecnici</h3>
+			<p>
+				I cookie tecnici sono necessari per consentire il corretto funzionamento del sito,
+				migliorare la sicurezza e ricordare alcune preferenze essenziali, come l’avvenuta
+				lettura del banner informativo sui cookie.
+			</p>
+
+			<h3>Cookie di profilazione</h3>
+			<p>
+				Il sito non utilizza cookie di profilazione, strumenti pubblicitari, Meta Pixel,
+				Google Analytics o altri sistemi di tracciamento avanzato.
+			</p>
+
+			<h3>Servizi esterni</h3>
+			<p>
+				Il sito contiene link verso servizi esterni come WhatsApp, Instagram, Messenger,
+				telefono ed email. Cliccando su tali link, l’utente lascia questo sito e accede
+				a piattaforme gestite da terze parti, soggette alle rispettive informative privacy
+				e cookie policy.
+			</p>
+
+			<h3>Gestione dei cookie</h3>
+			<p>
+				L’utente può cancellare i cookie o i dati locali del browser in qualsiasi momento
+				tramite le impostazioni del proprio browser.
+			</p>
+
+			<h3>Modifiche</h3>
+			<p>
+				La presente Cookie Policy può essere aggiornata nel tempo. La versione pubblicata
+				su questa pagina è quella attualmente valida.
+			</p>
+
+			<p>
+				Ultimo aggiornamento: 2026
+			</p>
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="footer-logo">
+			<img src="assets/images/logoS.png" alt="Logo Rendering Udine" style="--w: 120px; --h: 120px;">
+			<strong>Rendering Udine</strong>
+		</div>
+
+		<p>© 2026 Rendering Udine — Rendering 3D fotorealistici</p>
+
+		<div class="footer-links">
+			<a href="index.html">Torna alla Home</a>
+			<span>|</span>
+			<a href="privacy.html">Privacy Policy</a>
+		</div>
+	</footer>
+
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Informativa cookie">
+	<div class="cookie-content">
+		<p>
+			Questo sito utilizza solo cookie tecnici necessari al funzionamento e non usa cookie di profilazione.
+			Per maggiori informazioni consulta la
+			<a href="privacy.html">Privacy Policy</a>
+			e la
+			<a href="cookie.html">Cookie Policy</a>.
+		</p>
+
+		<button id="accept-cookies" type="button">OK</button>
+	</div>
+</div>
+
+<script>
+	(function () {
+		const cookieBanner = document.getElementById('cookie-banner');
+		const acceptCookies = document.getElementById('accept-cookies');
+
+		if (!cookieBanner || !acceptCookies) return;
+
+		if (localStorage.getItem('cookieAccepted') === 'true') {
+			cookieBanner.style.display = 'none';
+			return;
+		}
+
+		acceptCookies.addEventListener('click', function () {
+			localStorage.setItem('cookieAccepted', 'true');
+			cookieBanner.style.display = 'none';
+		});
+	})();
+</script>
+
+</body>
+</html>

@@ -75,7 +75,7 @@
 		<div class="work"
 			data-title="Bagni Design"
 			data-description="Rendering bagno con rivestimenti effetto marmo, sanitari moderni e luce scenografica."
-			data-images="images/bagno-01.jpg|images/bagno-02.jpg|images/bagno-03.jpg|images/bagno-04.jpg|images/bagno-05.jpg|images/bagno-06.jpg|images/bagno-07.jpg"">
+			data-images="images/bagno-01.jpg|images/bagno-02.jpg|images/bagno-03.jpg|images/bagno-04.jpg|images/bagno-05.jpg|images/bagno-06.jpg|images/bagno-07.jpg">
 			<img src="images/bagno-01.jpg" alt="Rendering bagno design" style="--w: 100%; --h: 360px; --mobile-h: 300px;">
 			<div class="work-info">
 				<h3>Bagni Design</h3>
@@ -261,6 +261,8 @@
 
 	<div class="footer-links">
 		<a href="privacy.html">Privacy Policy</a>
+		<span>|</span>
+		<a href="cookie.html">Cookie Policy</a>
 	</div>
 </footer>
 
@@ -454,6 +456,40 @@
 	window.addEventListener('resize', prepareMobileGallery);
 
 	prepareMobileGallery();
+</script>
+
+
+<div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Informativa cookie">
+	<div class="cookie-content">
+		<p>
+			Questo sito utilizza solo cookie tecnici necessari al funzionamento e non usa cookie di profilazione.
+			Per maggiori informazioni consulta la
+			<a href="privacy.html">Privacy Policy</a>
+			e la
+			<a href="cookie.html">Cookie Policy</a>.
+		</p>
+
+		<button id="accept-cookies" type="button">OK</button>
+	</div>
+</div>
+
+<script>
+	(function () {
+		const cookieBanner = document.getElementById('cookie-banner');
+		const acceptCookies = document.getElementById('accept-cookies');
+
+		if (!cookieBanner || !acceptCookies) return;
+
+		if (localStorage.getItem('cookieAccepted') === 'true') {
+			cookieBanner.style.display = 'none';
+			return;
+		}
+
+		acceptCookies.addEventListener('click', function () {
+			localStorage.setItem('cookieAccepted', 'true');
+			cookieBanner.style.display = 'none';
+		});
+	})();
 </script>
 
 </body>
