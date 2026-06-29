@@ -261,8 +261,7 @@
 
 	<div class="footer-links">
 		<a href="privacy.html">Privacy Policy</a>
-		<span>|</span>
-		<a href="cookie.html">Cookie Policy</a>
+			<a href="cookie.html">Cookie Policy</a>
 	</div>
 </footer>
 
@@ -458,17 +457,12 @@
 	prepareMobileGallery();
 </script>
 
-
 <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Informativa cookie">
 	<div class="cookie-content">
 		<p>
-			Questo sito utilizza solo cookie tecnici necessari al funzionamento e non usa cookie di profilazione.
-			Per maggiori informazioni consulta la
-			<a href="privacy.html">Privacy Policy</a>
-			e la
-			<a href="cookie.html">Cookie Policy</a>.
+			Questo sito utilizza esclusivamente cookie tecnici e funzionalità locali necessarie al corretto funzionamento.
+			Per maggiori informazioni consulta la <a href="privacy.html">Privacy Policy</a> e la <a href="cookie.html">Cookie Policy</a>.
 		</p>
-
 		<button id="accept-cookies" type="button">OK</button>
 	</div>
 </div>
@@ -480,13 +474,13 @@
 
 		if (!cookieBanner || !acceptCookies) return;
 
-		if (localStorage.getItem('cookieAccepted') === 'true') {
+		if (localStorage.getItem('renderingUdineCookieOk') === 'true') {
 			cookieBanner.style.display = 'none';
 			return;
 		}
 
 		acceptCookies.addEventListener('click', function () {
-			localStorage.setItem('cookieAccepted', 'true');
+			localStorage.setItem('renderingUdineCookieOk', 'true');
 			cookieBanner.style.display = 'none';
 		});
 	})();

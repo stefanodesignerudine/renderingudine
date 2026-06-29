@@ -1,0 +1,21 @@
+{
+  "name": "Rendering Udine",
+  "short_name": "Rendering Udine",
+  "description": "Rendering 3D fotorealistici a Udine per interni, esterni e prodotti.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f1ec",
+  "theme_color": "#f4f1ec",
+  "icons": [
+    {
+      "src": "assets/images/logoS.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logoS.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
